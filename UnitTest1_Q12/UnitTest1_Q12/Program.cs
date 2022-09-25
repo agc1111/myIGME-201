@@ -47,7 +47,7 @@ namespace ConsoleApp1
             //If param name = my name
             if (name == myName)
             {
-                salary += 19999.999;
+                salary += 19999.99;
                 tf = true;
             }
 
