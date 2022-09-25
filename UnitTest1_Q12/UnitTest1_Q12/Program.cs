@@ -23,9 +23,10 @@ namespace ConsoleApp1
             Console.WriteLine("Enter your name: ");
             sName = Console.ReadLine();
 
+            //Call method
             bool raise = GiveRaise(sName, ref dSalary);
 
-            if(raise == true)
+            if (raise == true)
             {
                 Console.WriteLine("Congragulations! You got a raise! Your new salary is: " + dSalary);
             }
@@ -37,10 +38,14 @@ namespace ConsoleApp1
         }
         static bool GiveRaise(string name, ref double salary)
         {
+            //t/f variable
             bool tf = false;
+
+            //My name
             string myName = "Aidan";
 
-            if(name == myName)
+            //If param name = my name
+            if (name == myName)
             {
                 salary += 19999.999;
                 tf = true;
